@@ -1,4 +1,4 @@
-package com.day05.jdbc1;
+package com.day06.jdbctemplate;
 
 import java.util.Date;
 
@@ -6,14 +6,14 @@ import java.util.Date;
  * 封装emp表 的数据类
  */
 public class Emp {
-   private Integer id;
+   private int id;
    private  String ename;
-   private  Integer  job_id;
-   private  Integer  mgr;
+   private  int job_id;
+   private  int mgr;
    private Date joindate;
-   private  Double salary;
-   private Double bouns;
-   private  Integer  dept_id;
+   private  double salary;
+   private double bouns;
+   private  int dept_id;
 
     @Override
     public String toString() {
@@ -29,11 +29,11 @@ public class Emp {
                 '}';
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -45,19 +45,19 @@ public class Emp {
         this.ename = ename;
     }
 
-    public Integer getJob_id() {
+    public int getJob_id() {
         return job_id;
     }
 
-    public void setJob_id(Integer job_id) {
+    public void setJob_id(int job_id) {
         this.job_id = job_id;
     }
 
-    public Integer getMgr() {
+    public int getMgr() {
         return mgr;
     }
 
-    public void setMgr(Integer mgr) {
+    public void setMgr(int mgr) {
         this.mgr = mgr;
     }
 
@@ -69,27 +69,27 @@ public class Emp {
         this.joindate = joindate;
     }
 
-    public Double getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(Double salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
-    public Double getBouns() {
+    public double getBouns() {
         return bouns;
     }
 
-    public void setBouns(Double bouns) {
+    public void setBouns(double bouns) {
         this.bouns = bouns;
     }
 
-    public Integer getDept_id() {
+    public int getDept_id() {
         return dept_id;
     }
 
-    public void setDept_id(Integer dept_id) {
+    public void setDept_id(int dept_id) {
         this.dept_id = dept_id;
     }
 }
