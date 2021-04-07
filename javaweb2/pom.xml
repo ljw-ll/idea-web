@@ -7,7 +7,12 @@
     <groupId>groupId</groupId>
     <artifactId>javaweb2</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <!--当前项目  基于开发的java jdk版本-->
+        <maven.compiler.target>11</maven.compiler.target>
+        <!--当前项目  编译后 支持的在 哪个java jdk版本-->
+    </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
 
@@ -17,5 +22,33 @@
             <version>4.0.1</version>
             <scope>provided</scope>        <!--部署环境 已包含，打包时不会 打包这个-->
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.0.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>5.0.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.0.0.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>5.0.0.RELEASE</version>
+        </dependency>
+
     </dependencies>
 </project>

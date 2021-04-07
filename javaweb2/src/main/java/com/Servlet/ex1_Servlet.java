@@ -1,8 +1,7 @@
-package com.servlet;
+package com.Servlet;
 
 
 import javax.servlet.*;
-import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
 
